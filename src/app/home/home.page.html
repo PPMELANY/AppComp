@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Led FireBase
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Contenido de la página 
+  <ion-button (click)= 'apagar()' expand="block" fill="clear" shape="round">
+    apagar
+  </ion-button>
+
+  <ion-button (click)= 'encender()' expand="block" fill="clear" shape="round">
+    encender
+  </ion-button>
+  <ion-button (click)= 'apagar()' expand="block" fill="clear" shape="round">
+    apagar
+  </ion-button>
+
+  <ion-button (click)= 'encender()' expand="block" fill="clear" shape="round">
+    encender
+  </ion-button>
+
+  <ion-button (click)= 'colors()'>
+    {{ledColor? "red": "purple" }} 
+    </ion-button>
+
+    <ion-button><ion-icon name="power-outline"></ion-icon></ion-button>-->
+
+    <ion-button (click)= 'colors()'  expand="block" shape="round" [color]="ledColor ? 'success' : 'danger'">
+      {{ledColor? "encendido": "apagado" }} 
+      
+      </ion-button>
+  
+  
+    <ion-button (click)= 'color2()'  expand="block" shape="round" [color]="ledColor ? 'success' : 'danger'" [color]="ledColor2 ? 'success' : 'danger'">
+        {{ledColor2? "encendido": "-" }} 
+        {{ledColor? "encendido": "apagado" }} 
+      </ion-button>
+  
+      <ion-button (click)= 'color3()'  expand="block" shape="round" [color]="ledColor ? 'success' : 'danger'" [color]="ledColor3 ? 'success' : 'danger'">
+        {{ledColor3? "encendido": "-" }} 
+        {{ledColor? "encendido": "apagado" }} 
+      </ion-button>
+  
+      <ion-button (click)= 'color4()'  expand="block" shape="round" [color]="ledColor ? 'success' : 'danger'" [color]="ledColor4 ? 'success' : 'danger'">
+        {{ledColor4? "encendido": "-" }} 
+        {{ledColor? "encendido": "apagado" }} 
+      </ion-button>
+    
+  
+</ion-content>
